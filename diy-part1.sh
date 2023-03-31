@@ -83,6 +83,11 @@ svn co https://github.com/fw876/helloworld/trunk/lua-neturl package/lua-neturl
 svn co https://github.com/fw876/helloworld/trunk/trojan package/trojan
 svn co https://github.com/fw876/helloworld/trunk/redsocks2 package/redsocks2
 
+# Add luci-app-openclash
+git clone https://github.com/vernesong/OpenClash.git package-temp
+mv -f package-temp/luci-app-openclash package/lean/
+rm -rf package-temp
+
 # Add luci-theme-opentomcat
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git theme-temp/luci-theme-opentomcat
 rm -rf theme-temp/luci-theme-opentomcat/LICENSE
