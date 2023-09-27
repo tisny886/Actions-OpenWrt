@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: immo OpenWrt
+name: r33 immo OpenWrt
 
 on:
   repository_dispatch:
