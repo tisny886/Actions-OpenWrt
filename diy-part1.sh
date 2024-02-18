@@ -17,7 +17,8 @@ sed -i 's/192.168.1.1/192.168.133.1/g' package/base-files/files/bin/config_gener
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g' ./target/linux/ramips/Makefile
 #改内核5.15
 #sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.15/g' ./target/linux/ramips/Makefile
-
+#改内核6.1
+sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/ramips/Makefile
 # Uncomment a feed source
 
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
