@@ -25,7 +25,7 @@ sed -i 's/192.168.1.1/192.168.133.1/g' package/base-files/files/bin/config_gener
 
 # Add a feed source
 #sed -i '$a src-git smpackage https://github.com/kenzok78/small-package' feeds.conf.default
-#sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-packages' feeds.conf.default
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
@@ -33,7 +33,7 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 #src-git helloworld https://github.com/fw876/helloworld
 #src-git passwall https://github.com/xiaorouji/openwrt-passwall
 #git clone https://github.com/yaof2/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 #git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
 git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 
