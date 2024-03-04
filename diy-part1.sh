@@ -25,7 +25,7 @@ sed -i 's/192.168.1.1/192.168.133.1/g' package/base-files/files/bin/config_gener
 
 # Add a feed source
 #sed -i '$a src-git smpackage https://github.com/kenzok78/small-package' feeds.conf.default
-sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-packages' feeds.conf.default
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
