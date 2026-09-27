@@ -1,0 +1,30 @@
+name: Auto Unzip
+
+on:
+  push:
+    paths:
+      - '*.zip'   # 仅在推送 zip 文件时触发
+
+permissions:
+  contents: write  # 必须声明写权限，否则无法提交解压后的文件
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Unzip archive
+        run: |
+          for f in *.zip; do
+            unzip -o "$f" -d .
+          done
+
+      - name: Commit and push extracted files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Auto-unzip archive" || exit 0
+          git push
