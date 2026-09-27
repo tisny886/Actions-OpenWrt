@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# TR3600 defaults.
+# Keep this intentionally small: do not overwrite WAN/LAN settings supplied
+# by the user after first boot.
+
+uci -q set system.@system[0].hostname='Cudy-TR3600'
+uci -q set system.@system[0].zonename='Asia/Taipei'
+uci -q set system.@system[0].timezone='<+08>-8'
+
+# zram: leave the package's default mechanism in charge.
+uci -q commit system
+
+exit 0
